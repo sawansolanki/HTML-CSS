@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>storage account</title>
+        <link rel="stylesheet" type="text/css" href="../design.css">
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <h2> Enter details to create storage account</h2>
+
+        <form action="http://172.206.116.125:5000/addnumber" method="GET">
+            <div class="container"><img src="..\images\storage.jpg"></div>
+            
+            <br><br><br>
+            <label>Enter the name for storage account:</label>
+            <input id="storageaccountname" type="text">
+            <br>
+            <label for="rgname">Select Resource Group:</label>
+            <select name="rgname" id="rgname">
+                <option value="rg-dataops">RG-DataOps</option>
+                <option value="rg-sawan">RG-Sawan</option>
+                <option value="rg-observability">RG-Observability</option>
+                <option value="RG-Compass">RG-Compass</option>
+            </select>
+            <br>
+            <label for="region">Select Region:</label>
+            <select name="regions" id="regions">
+                <option value="useast">US East</option>
+                <option value="useast2">US East 2</option>
+                <option value="uksouth">UK South</option>
+                <option value="ukwest">UK West</option>
+            </select>
+            <br>
+            
+
+            <div class="container">
+                <button type="button" onclick="alert('creating storage account')">create</button>
+            </div>
+            
+
+        </form>
+
+    </body>
+</html>
